@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		76FED64726C89E090058A18A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FED64626C89E090058A18A /* AppDelegate.swift */; };
-		76FED64926C89E090058A18A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FED64826C89E090058A18A /* SceneDelegate.swift */; };
 		76FED64B26C89E090058A18A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FED64A26C89E090058A18A /* ViewController.swift */; };
 		76FED64E26C89E090058A18A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FED64C26C89E090058A18A /* Main.storyboard */; };
 		76FED65026C89E0A0058A18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FED64F26C89E0A0058A18A /* Assets.xcassets */; };
 		76FED65326C89E0A0058A18A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FED65126C89E0A0058A18A /* LaunchScreen.storyboard */; };
+		76FED65C26C89EC30058A18A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 76FED65B26C89EC30058A18A /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		76FED64326C89E090058A18A /* PlatziTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatziTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FED64626C89E090058A18A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76FED64826C89E090058A18A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		76FED64A26C89E090058A18A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76FED64D26C89E090058A18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76FED64F26C89E0A0058A18A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76FED65226C89E0A0058A18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76FED65426C89E0A0058A18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FED65B26C89EC30058A18A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +40,7 @@
 		76FED63A26C89E090058A18A = {
 			isa = PBXGroup;
 			children = (
+				76FED65A26C89EB20058A18A /* Git */,
 				76FED64526C89E090058A18A /* PlatziTweets */,
 				76FED64426C89E090058A18A /* Products */,
 			);
@@ -57,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				76FED64626C89E090058A18A /* AppDelegate.swift */,
-				76FED64826C89E090058A18A /* SceneDelegate.swift */,
 				76FED64A26C89E090058A18A /* ViewController.swift */,
 				76FED64C26C89E090058A18A /* Main.storyboard */,
 				76FED64F26C89E0A0058A18A /* Assets.xcassets */,
@@ -65,6 +65,14 @@
 				76FED65426C89E0A0058A18A /* Info.plist */,
 			);
 			path = PlatziTweets;
+			sourceTree = "<group>";
+		};
+		76FED65A26C89EB20058A18A /* Git */ = {
+			isa = PBXGroup;
+			children = (
+				76FED65B26C89EC30058A18A /* .gitignore */,
+			);
+			path = Git;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FED65C26C89EC30058A18A /* .gitignore in Resources */,
 				76FED65326C89E0A0058A18A /* LaunchScreen.storyboard in Resources */,
 				76FED65026C89E0A0058A18A /* Assets.xcassets in Resources */,
 				76FED64E26C89E090058A18A /* Main.storyboard in Resources */,
@@ -139,7 +148,6 @@
 			files = (
 				76FED64B26C89E090058A18A /* ViewController.swift in Sources */,
 				76FED64726C89E090058A18A /* AppDelegate.swift in Sources */,
-				76FED64926C89E090058A18A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PlatziTweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iscrozo.PlatziTweets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,6 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PlatziTweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iscrozo.PlatziTweets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
