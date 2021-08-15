@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBg" translatesAutoresizingMaskIntoConstraints="NO" id="5Nm-1i-Sn2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOa-dY-8uy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlatziTweets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puv-gw-m5i">
+                                        <rect key="frame" x="87" y="344" width="240" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La comunidad más grande de devs iOS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBb-WK-6sn">
+                                        <rect key="frame" x="20" y="402" width="374" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.56869153911564629" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="puv-gw-m5i" firstAttribute="centerY" secondItem="bOa-dY-8uy" secondAttribute="centerY" constant="-80" id="57M-v1-z71"/>
+                                    <constraint firstItem="wBb-WK-6sn" firstAttribute="centerX" secondItem="bOa-dY-8uy" secondAttribute="centerX" id="7vr-V0-TFy"/>
+                                    <constraint firstItem="wBb-WK-6sn" firstAttribute="leading" secondItem="bOa-dY-8uy" secondAttribute="leading" constant="20" id="Lh5-ia-U1f"/>
+                                    <constraint firstItem="wBb-WK-6sn" firstAttribute="top" secondItem="puv-gw-m5i" secondAttribute="bottom" constant="10" id="nK4-to-V6d"/>
+                                    <constraint firstAttribute="trailing" secondItem="wBb-WK-6sn" secondAttribute="trailing" constant="20" id="oPy-8e-3YK"/>
+                                    <constraint firstItem="puv-gw-m5i" firstAttribute="centerX" secondItem="bOa-dY-8uy" secondAttribute="centerX" id="tv5-lA-2ps"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Nm-1i-Sn2" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="E8E-dU-MsH"/>
+                            <constraint firstAttribute="bottom" secondItem="5Nm-1i-Sn2" secondAttribute="bottom" id="EWJ-HI-b5f"/>
+                            <constraint firstItem="bOa-dY-8uy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="OKa-Fp-RPf"/>
+                            <constraint firstItem="5Nm-1i-Sn2" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="P4n-zO-ylE"/>
+                            <constraint firstAttribute="bottom" secondItem="bOa-dY-8uy" secondAttribute="bottom" id="Ytq-uL-YXS"/>
+                            <constraint firstItem="bOa-dY-8uy" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="biR-Cn-QVQ"/>
+                            <constraint firstItem="5Nm-1i-Sn2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="kiY-zH-LRZ"/>
+                            <constraint firstItem="bOa-dY-8uy" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="phx-Vr-IkF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loginBg" width="640" height="425"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
