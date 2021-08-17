@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="isK-a3-DdG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -109,7 +109,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uHa-1d-ZVV">
-                                <rect key="frame" x="20" y="290" width="374" height="138"/>
+                                <rect key="frame" x="20" y="160" width="374" height="138"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zk-cp-Qfu">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -146,7 +146,7 @@
                         <constraints>
                             <constraint firstItem="7vC-N5-O6o" firstAttribute="trailing" secondItem="uHa-1d-ZVV" secondAttribute="trailing" constant="20" id="Hio-Ho-pHW"/>
                             <constraint firstItem="uHa-1d-ZVV" firstAttribute="leading" secondItem="7vC-N5-O6o" secondAttribute="leading" constant="20" id="UoF-DK-e6I"/>
-                            <constraint firstItem="uHa-1d-ZVV" firstAttribute="top" secondItem="7vC-N5-O6o" secondAttribute="top" constant="150" id="bjT-Bg-S98"/>
+                            <constraint firstItem="uHa-1d-ZVV" firstAttribute="top" secondItem="7vC-N5-O6o" secondAttribute="top" constant="20" id="bjT-Bg-S98"/>
                             <constraint firstItem="DAa-da-CgX" firstAttribute="leading" secondItem="7vC-N5-O6o" secondAttribute="leading" id="cLf-9e-drh"/>
                             <constraint firstAttribute="trailing" secondItem="DAa-da-CgX" secondAttribute="trailing" id="vHv-x0-ycJ"/>
                             <constraint firstAttribute="bottom" secondItem="DAa-da-CgX" secondAttribute="bottom" id="wkH-WM-j0K"/>
@@ -177,7 +177,7 @@
         <!--Registro-->
         <scene sceneID="7fg-22-Emf">
             <objects>
-                <viewController id="kx1-vX-uKH" sceneMemberID="viewController">
+                <viewController id="kx1-vX-uKH" customClass="RegisterViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bBK-gN-sqR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,7 +186,7 @@
                                 <rect key="frame" x="0.0" y="773" width="414" height="123"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nhh-wR-hPf">
-                                <rect key="frame" x="20" y="290" width="374" height="226"/>
+                                <rect key="frame" x="20" y="160" width="374" height="226"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nickname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZmB-hX-uM2">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -218,6 +218,9 @@
                                         <state key="normal" title="Registrarse">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerActionButton" destination="kx1-vX-uKH" eventType="touchUpInside" id="1kR-iC-2ga"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -230,11 +233,16 @@
                             <constraint firstItem="nhh-wR-hPf" firstAttribute="leading" secondItem="6Vf-WB-Q01" secondAttribute="leading" constant="20" id="kOm-yk-MfO"/>
                             <constraint firstItem="6Vf-WB-Q01" firstAttribute="trailing" secondItem="nhh-wR-hPf" secondAttribute="trailing" constant="20" id="m9f-6g-Uch"/>
                             <constraint firstItem="GXn-nu-Laj" firstAttribute="trailing" secondItem="6Vf-WB-Q01" secondAttribute="trailing" id="oKo-9k-B4E"/>
-                            <constraint firstItem="nhh-wR-hPf" firstAttribute="top" secondItem="6Vf-WB-Q01" secondAttribute="top" constant="150" id="wgK-PY-t1A"/>
+                            <constraint firstItem="nhh-wR-hPf" firstAttribute="top" secondItem="6Vf-WB-Q01" secondAttribute="top" constant="20" id="wgK-PY-t1A"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="28D-vx-AMJ"/>
                     <connections>
+                        <outlet property="emailTextField" destination="NeH-p9-8rX" id="S32-qZ-pDO"/>
+                        <outlet property="nicknameTextField" destination="ZmB-hX-uM2" id="azW-Lw-eym"/>
+                        <outlet property="passConfirmTextField" destination="Cd4-Ga-rHJ" id="RR1-1p-Cd6"/>
+                        <outlet property="passTextField" destination="rTO-q3-BA3" id="KJE-4K-0HJ"/>
+                        <outlet property="registerButton" destination="ml9-Lz-FcI" id="PCj-PD-uPx"/>
                         <segue destination="9Go-ar-qhX" kind="show" identifier="GO_TO_HOME" id="ViH-l6-TL9"/>
                     </connections>
                 </viewController>

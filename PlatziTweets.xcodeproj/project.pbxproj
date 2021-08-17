@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7615531226C8A3D9003680BA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7615531126C8A3D9003680BA /* Welcome.storyboard */; };
+		767CC8B926CB65B000886929 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8B826CB65B000886929 /* Endpoints.swift */; };
+		767CC8BC26CB66E500886929 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8BB26CB66E500886929 /* Post.swift */; };
+		767CC8BE26CB676900886929 /* PostLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8BD26CB676900886929 /* PostLocation.swift */; };
+		767CC8C026CB677A00886929 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8BF26CB677A00886929 /* User.swift */; };
+		767CC8C326CB67AC00886929 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8C226CB67AC00886929 /* LoginRequest.swift */; };
+		767CC8C526CB67BC00886929 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8C426CB67BC00886929 /* PostRequest.swift */; };
+		767CC8C726CB67C900886929 /* PostRequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8C626CB67C900886929 /* PostRequestLocation.swift */; };
+		767CC8C926CB683E00886929 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8C826CB683E00886929 /* RegisterRequest.swift */; };
+		767CC8CC26CB689400886929 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8CB26CB689400886929 /* ErrorResponse.swift */; };
+		767CC8CE26CB68A400886929 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8CD26CB68A400886929 /* GeneralResponse.swift */; };
+		767CC8D026CB68B300886929 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8CF26CB68B300886929 /* LoginResponse.swift */; };
 		76D3AB1C26CA15F8000EF074 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D3AB1B26CA15F8000EF074 /* LoginViewController.swift */; };
 		76D3AB1E26CA1A4E000EF074 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D3AB1D26CA1A4E000EF074 /* WelcomeViewController.swift */; };
 		76D3AB2026CA1ACE000EF074 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D3AB1F26CA1ACE000EF074 /* RegisterViewController.swift */; };
@@ -17,13 +28,21 @@
 		76FED64726C89E090058A18A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FED64626C89E090058A18A /* AppDelegate.swift */; };
 		76FED65026C89E0A0058A18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FED64F26C89E0A0058A18A /* Assets.xcassets */; };
 		76FED65326C89E0A0058A18A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FED65126C89E0A0058A18A /* LaunchScreen.storyboard */; };
-		A74C19C2C31B8EE4651A2297 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550424CC382EDE6279A76EAE /* Pods_PlatziTweets.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43F3A9639B3378BF2B9016C6 /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
-		550424CC382EDE6279A76EAE /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7615531126C8A3D9003680BA /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		767CC8B826CB65B000886929 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		767CC8BB26CB66E500886929 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		767CC8BD26CB676900886929 /* PostLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocation.swift; sourceTree = "<group>"; };
+		767CC8BF26CB677A00886929 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		767CC8C226CB67AC00886929 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		767CC8C426CB67BC00886929 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		767CC8C626CB67C900886929 /* PostRequestLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestLocation.swift; sourceTree = "<group>"; };
+		767CC8C826CB683E00886929 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		767CC8CB26CB689400886929 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		767CC8CD26CB68A400886929 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		767CC8CF26CB68B300886929 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		76D3AB1B26CA15F8000EF074 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		76D3AB1D26CA1A4E000EF074 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		76D3AB1F26CA1ACE000EF074 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +54,6 @@
 		76FED64F26C89E0A0058A18A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76FED65226C89E0A0058A18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76FED65426C89E0A0058A18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7A574F3D8C356CBF40F3647 /* Pods-PlatziTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,21 +61,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A74C19C2C31B8EE4651A2297 /* Pods_PlatziTweets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		254C48328F7ABC73FAE37FAD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				550424CC382EDE6279A76EAE /* Pods_PlatziTweets.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7615530D26C8A35F003680BA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,8 +78,10 @@
 		7615530E26C8A3A5003680BA /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				767CC8BA26CB65C100886929 /* models */,
 				76FED64626C89E090058A18A /* AppDelegate.swift */,
 				76FED65126C89E0A0058A18A /* LaunchScreen.storyboard */,
+				767CC8B826CB65B000886929 /* Endpoints.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -93,6 +104,39 @@
 				76D3AB1F26CA1ACE000EF074 /* RegisterViewController.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		767CC8BA26CB65C100886929 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				767CC8CA26CB684B00886929 /* Response */,
+				767CC8C126CB678B00886929 /* Request */,
+				767CC8BB26CB66E500886929 /* Post.swift */,
+				767CC8BD26CB676900886929 /* PostLocation.swift */,
+				767CC8BF26CB677A00886929 /* User.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		767CC8C126CB678B00886929 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				767CC8C226CB67AC00886929 /* LoginRequest.swift */,
+				767CC8C426CB67BC00886929 /* PostRequest.swift */,
+				767CC8C626CB67C900886929 /* PostRequestLocation.swift */,
+				767CC8C826CB683E00886929 /* RegisterRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		767CC8CA26CB684B00886929 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				767CC8CB26CB689400886929 /* ErrorResponse.swift */,
+				767CC8CD26CB68A400886929 /* GeneralResponse.swift */,
+				767CC8CF26CB68B300886929 /* LoginResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		76D3AB2126CA1D34000EF074 /* Constants */ = {
@@ -118,7 +162,6 @@
 				76FED64526C89E090058A18A /* PlatziTweets */,
 				76FED64426C89E090058A18A /* Products */,
 				D9122C82ECD0CA5A378B8FB9 /* Pods */,
-				254C48328F7ABC73FAE37FAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,8 +188,6 @@
 		D9122C82ECD0CA5A378B8FB9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				43F3A9639B3378BF2B9016C6 /* Pods-PlatziTweets.debug.xcconfig */,
-				D7A574F3D8C356CBF40F3647 /* Pods-PlatziTweets.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -158,11 +199,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76FED65726C89E0A0058A18A /* Build configuration list for PBXNativeTarget "PlatziTweets" */;
 			buildPhases = (
-				1C2903879FD2FD77006BD5F8 /* [CP] Check Pods Manifest.lock */,
 				76FED63F26C89E090058A18A /* Sources */,
 				76FED64026C89E090058A18A /* Frameworks */,
 				76FED64126C89E090058A18A /* Resources */,
-				4F6FDF5887232EF6C4237C89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,59 +258,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1C2903879FD2FD77006BD5F8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PlatziTweets-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4F6FDF5887232EF6C4237C89 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		76FED63F26C89E090058A18A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767CC8CC26CB689400886929 /* ErrorResponse.swift in Sources */,
 				76D3AB1E26CA1A4E000EF074 /* WelcomeViewController.swift in Sources */,
 				76D3AB1C26CA15F8000EF074 /* LoginViewController.swift in Sources */,
+				767CC8C726CB67C900886929 /* PostRequestLocation.swift in Sources */,
+				767CC8BE26CB676900886929 /* PostLocation.swift in Sources */,
+				767CC8C926CB683E00886929 /* RegisterRequest.swift in Sources */,
 				76D3AB2326CA1D8A000EF074 /* Constants_segue.swift in Sources */,
+				767CC8BC26CB66E500886929 /* Post.swift in Sources */,
+				767CC8B926CB65B000886929 /* Endpoints.swift in Sources */,
 				76FED64726C89E090058A18A /* AppDelegate.swift in Sources */,
+				767CC8C526CB67BC00886929 /* PostRequest.swift in Sources */,
 				76D3AB2026CA1ACE000EF074 /* RegisterViewController.swift in Sources */,
+				767CC8C026CB677A00886929 /* User.swift in Sources */,
+				767CC8CE26CB68A400886929 /* GeneralResponse.swift in Sources */,
 				76D3AB2826CA1ED0000EF074 /* HomeViewController.swift in Sources */,
+				767CC8D026CB68B300886929 /* LoginResponse.swift in Sources */,
+				767CC8C326CB67AC00886929 /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +415,6 @@
 		};
 		76FED65826C89E0A0058A18A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43F3A9639B3378BF2B9016C6 /* Pods-PlatziTweets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -427,7 +434,6 @@
 		};
 		76FED65926C89E0A0058A18A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7A574F3D8C356CBF40F3647 /* Pods-PlatziTweets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

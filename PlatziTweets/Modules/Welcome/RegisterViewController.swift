@@ -33,11 +33,11 @@ class RegisterViewController: UIViewController {
             NotificationBanner(title: "Ups!", subtitle: "Lo sentimos mira tu campo de nickname",style: .warning).show()
             return
         }
-        guard let emailValue = emailTextField.text, !emailValue.isEmpty, emailValue.count < 25 else {
+        guard let emailValue = emailTextField.text, !emailValue.isEmpty  else {
             NotificationBanner(title: "Ups!", subtitle: "Lo sentimos mira tu campo de email", style: .warning).show()
             return
         }
-        guard let passValue = passTextField.text, !passValue.isEmpty, passValue.count < 25 else {
+        guard let passValue = passTextField.text, !passValue.isEmpty, passValue.count > 5 else {
             NotificationBanner(title: "Ups!", subtitle: "Lo snentimos mira tu campo de password", style: .warning) .show()
             return
         }

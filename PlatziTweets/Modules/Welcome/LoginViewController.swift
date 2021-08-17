@@ -32,10 +32,12 @@ class LoginViewController: UIViewController {
             return
         }
         
-        guard let passValue = passTextField.text, !passValue.isEmpty , passValue.count<5 else {
-            NotificationBanner(title: "Ups!", subtitle: "Revisa tu campo de password", style: .warning).show()
+        guard let passValue = passTextField.text, !passValue.isEmpty, passValue.count > 5 else {
+            NotificationBanner(title: "Ups!", subtitle: "Revisa tu campo de password, tu password no cumple con los 5 caracteres minimos", style: .warning).show()
             return
         }
+        
+        
         performSegue(withIdentifier: Constants_segue.GO_TO_HOME, sender: nil)
     }
     
