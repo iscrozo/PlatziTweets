@@ -7,6 +7,8 @@
 
 import UIKit
 import NotificationBannerSwift
+import Simple_Networking
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
 
@@ -38,7 +40,39 @@ class LoginViewController: UIViewController {
         }
         
         
-        performSegue(withIdentifier: Constants_segue.GO_TO_HOME, sender: nil)
+        //performSegue(withIdentifier: Constants_segue.GO_TO_HOME, sender: nil)
+        // crear request
+        let request = LoginRequest(email: emailValue, password: passValue)
+        
+        // Iniciamos la carga
+        SVProgressHUD.show()
+        
+        // llamar libreria de red
+        SN.post(endpoint: Endpoints.login, model: request) {
+            (response: SNResultWithEntity<LoginResponse, ErrorResponse> )in
+            
+            SVProgressHUD.dismiss()
+            
+            switch response {
+            case .success(let aobResponse):
+                //todo lo bueno
+                self.performSegue(withIdentifier: Constants_segue.GO_TO_HOME, sender: nil)
+                DispatchQueue.main.async {
+                    NotificationBanner( subtitle: "Bienvenido \(aobResponse.user.names)", style: .success).show()
+                }
+
+            break
+            case .error(let aobError):
+                // todo lo malo
+                NotificationBanner( subtitle: "Lo sentimos \(aobError.localizedDescription)", style: .warning).show()
+            break
+            case .errorResult(let aobEntity):
+                // error no tan malo
+                NotificationBanner( subtitle: "Lo sentimos \(aobEntity.error)", style: .warning).show()
+            break
+            }
+        }
+        
     }
     
     // MARK: - Referencias ActionButtons
