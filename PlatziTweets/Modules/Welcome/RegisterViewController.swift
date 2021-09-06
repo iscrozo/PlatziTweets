@@ -7,6 +7,8 @@
 
 import UIKit
 import NotificationBannerSwift
+import Simple_Networking
+import SVProgressHUD
 
 class RegisterViewController: UIViewController {
 
@@ -45,7 +47,37 @@ class RegisterViewController: UIViewController {
             NotificationBanner(title: "Ups!", subtitle: "Lo sentimos mira tu campo de confirmar contraseña", style: .warning).show()
             return
         }
-        performSegue(withIdentifier: Constants_segue.GO_TO_HOME, sender: nil)
+//        performSegue(withIdentifier: Constants_segue.GO_TO_HOME, sender: nil)
+        // Crear request
+        let request = RegisterRequest(email: emailValue, password: passValue, names: nicknameValue)
+        // UIndicar la carga
+        SVProgressHUD.show()
+        // llamar al servicio
+        
+        SN.post(endpoint: Endpoints.register, model: request) {
+            (response: SNResultWithEntity<LoginResponse, ErrorResponse> )in
+            // cerramos la carga al usuario
+            SVProgressHUD.dismiss()
+            
+            switch response {
+            case .success(let aobResponse):
+                //todo lo bueno
+                self.performSegue(withIdentifier: Constants_segue.GO_TO_HOME, sender: nil)
+                DispatchQueue.main.async {
+                    NotificationBanner( subtitle: "Bienvenido \(aobResponse.user.names)", style: .success).show()
+                }
+
+            break
+            case .error(let aobError):
+                // todo lo malo
+                NotificationBanner( subtitle: "Lo sentimos \(aobError.localizedDescription)", style: .warning).show()
+            break
+            case .errorResult(let aobEntity):
+                // error no tan malo
+                NotificationBanner( subtitle: "Lo sentimos \(aobEntity.error)", style: .warning).show()
+            break
+            }
+        }
     }
     
     // MARK: - Referencias RegisterActionsButton
