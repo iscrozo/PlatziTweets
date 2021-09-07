@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7615531226C8A3D9003680BA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7615531126C8A3D9003680BA /* Welcome.storyboard */; };
+		76471C2526E704A400159DF6 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76471C2326E704A400159DF6 /* TweetTableViewCell.swift */; };
+		76471C2626E704A400159DF6 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76471C2426E704A400159DF6 /* TweetTableViewCell.xib */; };
 		767CC8B926CB65B000886929 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8B826CB65B000886929 /* Endpoints.swift */; };
 		767CC8BC26CB66E500886929 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8BB26CB66E500886929 /* Post.swift */; };
 		767CC8BE26CB676900886929 /* PostLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8BD26CB676900886929 /* PostLocation.swift */; };
@@ -35,6 +37,8 @@
 		569393FF980F95D4DACF063B /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
 		72462AFC011EA4F79EA9636E /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7615531126C8A3D9003680BA /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		76471C2326E704A400159DF6 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		76471C2426E704A400159DF6 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		767CC8B826CB65B000886929 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		767CC8BB26CB66E500886929 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		767CC8BD26CB676900886929 /* PostLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocation.swift; sourceTree = "<group>"; };
@@ -119,6 +123,15 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		76471C2226E7048200159DF6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				76471C2326E704A400159DF6 /* TweetTableViewCell.swift */,
+				76471C2426E704A400159DF6 /* TweetTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		767CC8BA26CB65C100886929 /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +176,7 @@
 		76D3AB2426CA1E3A000EF074 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				76471C2226E7048200159DF6 /* Cells */,
 				76D3AB2526CA1E46000EF074 /* Home.storyboard */,
 				76D3AB2726CA1ED0000EF074 /* HomeViewController.swift */,
 			);
@@ -267,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76471C2626E704A400159DF6 /* TweetTableViewCell.xib in Resources */,
 				7615531226C8A3D9003680BA /* Welcome.storyboard in Resources */,
 				76FED65326C89E0A0058A18A /* LaunchScreen.storyboard in Resources */,
 				76FED65026C89E0A0058A18A /* Assets.xcassets in Resources */,
@@ -334,6 +349,7 @@
 				767CC8B926CB65B000886929 /* Endpoints.swift in Sources */,
 				76FED64726C89E090058A18A /* AppDelegate.swift in Sources */,
 				767CC8C526CB67BC00886929 /* PostRequest.swift in Sources */,
+				76471C2526E704A400159DF6 /* TweetTableViewCell.swift in Sources */,
 				76D3AB2026CA1ACE000EF074 /* RegisterViewController.swift in Sources */,
 				767CC8C026CB677A00886929 /* User.swift in Sources */,
 				767CC8CE26CB68A400886929 /* GeneralResponse.swift in Sources */,

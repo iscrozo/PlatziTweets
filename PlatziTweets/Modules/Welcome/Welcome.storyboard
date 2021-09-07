@@ -157,7 +157,7 @@
                         <outlet property="emailTextField" destination="7Zk-cp-Qfu" id="K4q-h7-6pd"/>
                         <outlet property="loginButton" destination="ynz-RJ-Rd5" id="Uea-q8-oJJ"/>
                         <outlet property="passTextField" destination="Kkx-CA-UsO" id="SRb-fv-eeT"/>
-                        <segue destination="9Go-ar-qhX" kind="show" identifier="GO_TO_HOME" id="ymF-oq-XBg"/>
+                        <segue destination="9Go-ar-qhX" kind="presentation" identifier="GO_TO_HOME" modalPresentationStyle="fullScreen" id="ymF-oq-XBg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Coz-wI-lA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -243,7 +243,7 @@
                         <outlet property="passConfirmTextField" destination="Cd4-Ga-rHJ" id="RR1-1p-Cd6"/>
                         <outlet property="passTextField" destination="rTO-q3-BA3" id="KJE-4K-0HJ"/>
                         <outlet property="registerButton" destination="ml9-Lz-FcI" id="PCj-PD-uPx"/>
-                        <segue destination="9Go-ar-qhX" kind="show" identifier="GO_TO_HOME" id="ViH-l6-TL9"/>
+                        <segue destination="9Go-ar-qhX" kind="presentation" identifier="GO_TO_HOME" modalPresentationStyle="fullScreen" id="ViH-l6-TL9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHJ-DQ-pBR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -270,7 +270,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ViH-l6-TL9"/>
+        <segue reference="ymF-oq-XBg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bottomImage" width="351.5" height="123"/>

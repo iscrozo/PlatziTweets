@@ -57,6 +57,7 @@ class LoginViewController: UIViewController {
             case .success(let aobResponse):
                 //todo lo bueno
                 self.performSegue(withIdentifier: Constants_segue.GO_TO_HOME, sender: nil)
+                SimpleNetworking.setAuthenticationHeader(prefix: "", token: aobResponse.token)
                 DispatchQueue.main.async {
                     NotificationBanner( subtitle: "Bienvenido \(aobResponse.user.names)", style: .success).show()
                 }
