@@ -109,7 +109,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uHa-1d-ZVV">
-                                <rect key="frame" x="20" y="160" width="374" height="138"/>
+                                <rect key="frame" x="20" y="160" width="374" height="179"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zk-cp-Qfu">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -121,8 +121,22 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bRo-WL-BqZ">
+                                        <rect key="frame" x="0.0" y="88" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guardar usuario" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRJ-Ta-6bJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z8u-mb-foW">
+                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynz-RJ-Rd5">
-                                        <rect key="frame" x="0.0" y="88" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="129" width="374" height="50"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="XuR-fM-rlk"/>
@@ -155,6 +169,7 @@
                     <navigationItem key="navigationItem" title="Inicio de sesión" id="YyL-zZ-MKe"/>
                     <connections>
                         <outlet property="emailTextField" destination="7Zk-cp-Qfu" id="K4q-h7-6pd"/>
+                        <outlet property="guardarUsuario" destination="Z8u-mb-foW" id="FHl-LZ-3LZ"/>
                         <outlet property="loginButton" destination="ynz-RJ-Rd5" id="Uea-q8-oJJ"/>
                         <outlet property="passTextField" destination="Kkx-CA-UsO" id="SRb-fv-eeT"/>
                         <segue destination="9Go-ar-qhX" kind="presentation" identifier="GO_TO_HOME" modalPresentationStyle="fullScreen" id="ymF-oq-XBg"/>

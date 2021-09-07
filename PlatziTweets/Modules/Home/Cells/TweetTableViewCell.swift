@@ -41,6 +41,7 @@ class TweetTableViewCell: UITableViewCell {
             // desaparecer imagen
             tweetImageView.isHidden = true
         }
+        dateLabel.text = post.createdAt
         
     }
 }

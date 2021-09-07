@@ -17,15 +17,35 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var guardarUsuario: UISwitch!
+    
+    private let storage = UserDefaults.standard
+    private var userData: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupDataUser()
     }
     
     // MARK: - Referencias methods
     private func setupUI() {
         loginButton.layer.cornerRadius = 25
+    }
+    
+    private func setupDataUser() {
+        self.userData = storage.bool(forKey: "userApp")
+        
+        if self.userData {
+            emailTextField.text = storage.string(forKey: "emailApp")
+            passTextField.text = storage.string(forKey: "passApp")
+            guardarUsuario.isOn = true
+        } else {
+            storage.removeObject(forKey: "passApp")
+            storage.removeObject(forKey: "emailApp")
+            storage.removeObject(forKey: "userApp")
+            guardarUsuario.isOn = false
+        }
     }
     
     private func perfomLogin() {
@@ -39,6 +59,11 @@ class LoginViewController: UIViewController {
             return
         }
         
+        if guardarUsuario.isOn {
+            storage.setValue(emailValue, forKey: "emailApp")
+            storage.setValue(passValue, forKey:  "passApp")
+            storage.setValue(true, forKey: "userApp")
+        }
         
         //performSegue(withIdentifier: Constants_segue.GO_TO_HOME, sender: nil)
         // crear request

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7615531226C8A3D9003680BA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7615531126C8A3D9003680BA /* Welcome.storyboard */; };
+		76247A7926E7BDFE00EC7884 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76247A7826E7BDFE00EC7884 /* AddPostViewController.swift */; };
 		76471C2526E704A400159DF6 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76471C2326E704A400159DF6 /* TweetTableViewCell.swift */; };
 		76471C2626E704A400159DF6 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76471C2426E704A400159DF6 /* TweetTableViewCell.xib */; };
 		767CC8B926CB65B000886929 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8B826CB65B000886929 /* Endpoints.swift */; };
@@ -37,6 +38,7 @@
 		569393FF980F95D4DACF063B /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
 		72462AFC011EA4F79EA9636E /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7615531126C8A3D9003680BA /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		76247A7826E7BDFE00EC7884 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		76471C2326E704A400159DF6 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		76471C2426E704A400159DF6 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		767CC8B826CB65B000886929 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				76471C2226E7048200159DF6 /* Cells */,
 				76D3AB2526CA1E46000EF074 /* Home.storyboard */,
 				76D3AB2726CA1ED0000EF074 /* HomeViewController.swift */,
+				76247A7826E7BDFE00EC7884 /* AddPostViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				767CC8CC26CB689400886929 /* ErrorResponse.swift in Sources */,
 				76D3AB1E26CA1A4E000EF074 /* WelcomeViewController.swift in Sources */,
 				76D3AB1C26CA15F8000EF074 /* LoginViewController.swift in Sources */,
+				76247A7926E7BDFE00EC7884 /* AddPostViewController.swift in Sources */,
 				767CC8C726CB67C900886929 /* PostRequestLocation.swift in Sources */,
 				767CC8BE26CB676900886929 /* PostLocation.swift in Sources */,
 				767CC8C926CB683E00886929 /* RegisterRequest.swift in Sources */,
