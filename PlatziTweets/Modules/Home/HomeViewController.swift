@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     private let cellId = "TweetTableViewCell"
     private var dataSource = [Post]()
-    
+    private let storage = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +36,7 @@ class HomeViewController: UIViewController {
     private func setupUI() {
         // asginar datasource
         tableView.dataSource = self
+        tableView.delegate = self
         // registro de celdas
         tableView.register(UINib(nibName: cellId, bundle: nil ), forCellReuseIdentifier: cellId)
     }
@@ -60,6 +61,28 @@ class HomeViewController: UIViewController {
             
         }
     }
+    private func deletePost(indexPath: IndexPath) {
+        SVProgressHUD.show()
+        
+        let postId = dataSource[indexPath.row].id
+        
+        let endpointDelete = Endpoints.delete + postId
+        
+        SN.delete(endpoint: endpointDelete) { (result: SNResultWithEntity<GeneralResponse,ErrorResponse>) in
+            SVProgressHUD.dismiss()
+            switch result {
+            case .success:
+                // borrar el post del datasource
+                self.dataSource.remove(at: indexPath.row)
+                // borrar la celda de la tabla
+                self.tableView.deleteRows(at: [indexPath], with: .left)
+            case .error(error: let error):
+                NotificationBanner( subtitle: "Lo sentimos \(error.localizedDescription)", style: .warning).show()
+            case .errorResult(entity: let entity):
+                NotificationBanner( subtitle: "Lo sentimos \(entity.error)", style: .warning).show()
+            }
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -77,5 +100,20 @@ extension HomeViewController: UITableViewDataSource {
             cell.setupCellWith(post: dataSource[indexPath.row])
         }
         return cell
+    }
+}
+
+//MARK: -UITableViewDelegate
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Borrar") { _,_ in
+            // Aqui borramos el tweet
+            self.deletePost(indexPath: indexPath)
+        }
+        return [deleteAction]
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return dataSource[indexPath.row].author.email == storage.string(forKey: "emailApp")
     }
 }
