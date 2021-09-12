@@ -14,8 +14,13 @@ class AddPostViewController: UIViewController {
 
     // MARK: -IBOutlet
     @IBOutlet weak var postTextView: UITextView!
+    @IBOutlet weak var previewImageView: UIImageView!
     
     // MARK: -Actions
+    @IBAction func openCameraAction() {
+        openCamera()
+    }
+    
     @IBAction func addPostAction() {
         savePost()
     }
@@ -23,11 +28,29 @@ class AddPostViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    //MARK: -properties
+    private var imagePicker: UIImagePickerController?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    private func openCamera() {
+        imagePicker = UIImagePickerController()
+//        Al no tener camara en el simulador, se usa la biblioteca
+//        imagePicker?.sourceType = .camera
+        imagePicker?.sourceType = .photoLibrary
+//        imagePicker?.cameraFlashMode = .off
+//        imagePicker?.cameraCaptureMode = .photo
+        imagePicker?.allowsEditing = true
+        imagePicker?.delegate = self
         
+        guard let imagePicker = imagePicker else {
+            return
+        }
+        
+        present(imagePicker, animated: true, completion: nil)
     }
     
     private func savePost() {
@@ -57,4 +80,17 @@ class AddPostViewController: UIViewController {
     }
     
  
+}
+//MARK: -UIImagePickerControllerDelegate
+extension AddPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        // cerrar seelector de fotos
+        imagePicker?.dismiss(animated: true, completion: nil)
+        if info.keys.contains(.originalImage) {
+            previewImageView.isHidden = false
+            // obtenemos la imagen tomada desde el cel
+            previewImageView.image = info[.originalImage] as? UIImage
+            
+        }
+    }
 }

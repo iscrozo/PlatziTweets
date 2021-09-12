@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7615531226C8A3D9003680BA /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7615531126C8A3D9003680BA /* Welcome.storyboard */; };
 		76247A7926E7BDFE00EC7884 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76247A7826E7BDFE00EC7884 /* AddPostViewController.swift */; };
+		76407F6726E9B88300EB5695 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76407F6626E9B88300EB5695 /* GoogleService-Info.plist */; };
 		76471C2526E704A400159DF6 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76471C2326E704A400159DF6 /* TweetTableViewCell.swift */; };
 		76471C2626E704A400159DF6 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76471C2426E704A400159DF6 /* TweetTableViewCell.xib */; };
 		767CC8B926CB65B000886929 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CC8B826CB65B000886929 /* Endpoints.swift */; };
@@ -39,6 +40,7 @@
 		72462AFC011EA4F79EA9636E /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7615531126C8A3D9003680BA /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		76247A7826E7BDFE00EC7884 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		76407F6626E9B88300EB5695 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		76471C2326E704A400159DF6 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		76471C2426E704A400159DF6 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		767CC8B826CB65B000886929 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				7615530E26C8A3A5003680BA /* Commons */,
 				7615530D26C8A35F003680BA /* Resources */,
 				76FED65426C89E0A0058A18A /* Info.plist */,
+				76407F6626E9B88300EB5695 /* GoogleService-Info.plist */,
 			);
 			path = PlatziTweets;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				76FED65326C89E0A0058A18A /* LaunchScreen.storyboard in Resources */,
 				76FED65026C89E0A0058A18A /* Assets.xcassets in Resources */,
 				76D3AB2626CA1E46000EF074 /* Home.storyboard in Resources */,
+				76407F6726E9B88300EB5695 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
